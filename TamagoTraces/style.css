@@ -73,3 +73,20 @@ border-radius:10px;
 		text-align: center;
 }
 
+
+#intitule p{
+display: none;
+}
+
+canvas{
+	display: none;
+}
+
+iframe{
+	display: none;
+}
+
+#boutons{
+	display: none;
+}
+
