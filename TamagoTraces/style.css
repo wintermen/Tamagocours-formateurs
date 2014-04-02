@@ -1,7 +1,8 @@
-body {
+﻿body {
 margin: 0px;
 background-color: white;
 color: black;
+
 }
 header {
 /* bordure noire, à modifier éventuellement pour faire beau */
@@ -19,7 +20,7 @@ text-align: center;
 }
 
 h1{
-	font-size: 25px;
+	font-size: 24px;
 }
 
 section {
