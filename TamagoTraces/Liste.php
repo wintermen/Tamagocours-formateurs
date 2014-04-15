@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>title</title>
-   <link rel="stylesheet" href="style.css" />
-   <script src="jquery.js"></script>
-     <script>
+    <link rel="stylesheet" href="style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <script src="jquery.js"></script>
+    <script>
     $(document).ready(function() {
     $("p:lt(2)").remove();
     $("p").click(function() {
@@ -14,8 +15,8 @@
     	$('#pdf').empty().append(doc);
     	}
 		)})
-       	</script>
-      </head>
+    </script>
+  </head>
   <body>
        <header>
       <div class="header_images">

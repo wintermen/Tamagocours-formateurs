@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>title</title>
-   <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
     <script id='donnees'></script>
     <script src="jquery.js"></script>   
     <script src="base64.js"></script>
@@ -13,7 +15,8 @@
     <script src="jspdf.plugin.addimage.js"></script>
     <script src="script.js"></script>
     <script src="chart.js"></script>
-    </head>
+    <script src="js/bootstrap.js"></script>
+  </head>
   <body>
    <header>
       <div class="header_images">
@@ -25,11 +28,11 @@
       <h1 class= "titre">TAMAGOCOURS-FORMATEURS</h1>
     </div>
    </header></br>
-<a href='index.html'/><button>Accueil</button></a>
+<a href="index.html" class="btn btn-info btn-large"><i class="icon-white icon-chevron-left"></i> Accueil</a>
     <h1>Présentation des données</h1>
 
 <?php
-  mysql_connect("localhost", "root", "") or die(mysql_error());
+  mysql_connect("localhost", "root", "root") or die(mysql_error());
   mysql_select_db("inf42") or die(mysql_error());
   $result = mysql_query("SELECT DISTINCT name FROM table2")
   or die(mysql_error());  
@@ -54,9 +57,9 @@ $valeurgroupe = array_sum($identifiants);
 
 
         echo utf8_encode ( "<form id='JqPostForm'>
-        <input type='radio' onClick='affiche3();' name='choix_donnees' value='$valeurgroupe'> Le groupe");
+        <input type='radio' onClick='affiche3();' id='btn_radio' name='choix_donnees' value='$valeurgroupe'> Le groupe");
         for($i=0 ; $i< $nombrejoueurs  ; $i++){
-        echo utf8_encode ("<input type='radio' onClick='affiche3();' name='choix_donnees' value='$identifiants[$i]'> $noms[$i]");
+        echo utf8_encode ("<input type='radio' onClick='affiche3();' name='choix_donnees' id='btn_radio' value='$identifiants[$i]'> $noms[$i]");
         }
         echo utf8_encode("</form>
           <div id='boutons'>

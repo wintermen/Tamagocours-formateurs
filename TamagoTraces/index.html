@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Visualisation</title>
-   <link rel="stylesheet" href="style.css" />
-    
+    <link rel="stylesheet" href="style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <script src="jquery.js"></script>   
+    <script src="js/bootstrap.js"></script>
+
     
     </head>
   <body>
@@ -22,18 +25,21 @@
 
  <section id="presentation">
     <h3>Bienvenue sur la page de visualisation des traces de Tamagocours</h3>
-     <figure>
-     <img id="tamago" src="images/tamago.png" alt="dieteticien" />
-    </figure>
+    <div>
+      <figure>
+        <img id="tamago" src="images/tamago.png" alt="dieteticien" />
+      </figure>
+   
+  <div>Ces pages vous permettent d'accéder à une visualisation graphique des actions des joueurs de Tamagocours. Ces pages vous offrent la possibilité de visualiser un certain nombre de traces, par session, par groupe ou par joueur. Vous pourrez ainsi observer la stratégie employée par les joueurs - hasard ou stratégie basée sur la réflexion - et visualiser leurs réussites et leurs échecs par catégories de ressources. Vous pourrez ainsi remédier aux lacunes qui pourraient persister. Vous disposez également d'un espace de stockage des archives des traces de vos sessions.</div> 
+    </div>
 
-  <p>Ces pages vous permettent d'accéder à une visualisation graphique des actions des joueurs de Tamagocours. </br>Vous accéderez à des représentations visuelles des traces par session, par groupe ou par joueur. Ces pages vous offrent la possibilité de visualiser un certain nombre de traces qui vous aideront à comprendre quelle stratégie a été employée par les joueurs - hasard ou stratégie basée sur la réflexion - et à visualiser leurs réussites et leurs échecs par catégories de ressources. Vous pourrez ainsi remédier aux lacunes qui pourraient persister.Vous disposez également d'un espace de stockage des archives des traces de vos sessions.</p> 
 </br>
   
 <div id="visu">
-<a href="Affichage_donnees.php"/><button>Visualisation dynamique des traces de la session</button></a>
+<a href="Affichage_donnees.php" class="btn btn-info btn-large"/>Visualisation dynamique des traces de la session</a>
 </div>
 <div id="archive">
-<a href="Liste.php"/><button>Archives des traces des sessions antérieures</button></a>
+<a href="Liste.php" class="btn btn-info btn-large"/>Archives des traces des sessions antérieures</a>
 </div>
 </section></br>
   

@@ -2,7 +2,7 @@
 
 $donneesrecues = $_POST['choix_donnees'];
 
-mysql_connect("localhost", "root", "") or die(mysql_error());
+mysql_connect("localhost", "root", "root") or die(mysql_error());
 mysql_select_db("inf42") or die(mysql_error());
 
 $result = mysql_query("SELECT DISTINCT name FROM table2")
