@@ -1,50 +1,142 @@
-﻿body {
-margin: 0px;
-background-color: white;
+body {
+background-color:white;
 color: black;
-
+text-align: center;
+/* centrage et marges*/
+margin-right: 30%;
+margin-left: 10%;
+width: 80%;
 }
+
 header {
 /* bordure noire, à modifier éventuellement pour faire beau */
 border-style:solid;
-border-width:5px;
-/* centrage et marges*/
-margin-right: 10%;
-margin-left: 10%;
-width: 80%;
-padding:25px 20px 25px 20px; 
-}
-
-h1, p, div {
-text-align: center;
+border-width:4px;
+border-color: #00B5EC;
+-moz-border-radius:20px;
+-webkit-border-radius:20px ;
+border-radius:20px ;
+margin-right: 50px;
+margin-left: 50px;
 }
 
 h1{
-	font-size: 24px;
-}
-
-section {
-width: 80%;
-text-align: justify;
+	font-size: 30px;
+	font-family: "Times New Roman",Georgia,Serif;
+	padding-top: 0px;
 }
 
 /* logos :; même hauteur et alignement centré */
 .logo {
 text-align: center;
 display: inline-block;
-height: 50px;
+height: 55px;
+margin-left: 0px;
+margin-right: 60px;
+padding-top: 5px;
 }
 
 .header_titre {
-	font-size: 30px;
+	font-size: 20px;
 	text-align: center;
+    padding-top: 0px;
 }
 
+
+
 /* Pour la page index */
-.presentation {
-	text-align: justify;
-	width: 30%;
+
+
+h3 {
+	text-align: center;
+	margin-left: 250px;
+	margin-right: 250px;
+	font-size: 19px;
+	padding-top: 0px;
+	background-color: #FF8C00;
+	-moz-border-radius:20px;
+    -webkit-border-radius:20px ;
+    border-radius:20px ;
 }
+
+p {
+	text-align: justify;
+	font-size: 17px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+footer {
+	font-size: 13px;
+
+	margin-left: 350px;
+	margin-right: 200px;
+	line-height: 19px;
+	padding-top: 0px;
+}
+
+#presentation { 
+	
+	margin-right: 60px;
+	margin-left: 60px;
+	line-height: 26px;
+	padding-top: 0px;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-bottom: 0px;
+	border-style:solid;
+    border-width:4px;
+	-moz-border-radius:20px;
+    -webkit-border-radius:20px ;
+    border-radius:20px ;
+    border-color: #5AF600;
+   
+}
+
+
+
+/* les deux liens vers les pages de visualisation et d'archives*/
+
+
+#visu, #archive {
+	display : inline-block;
+	padding-bottom: 10px;
+
+}
+
+
+
+
+
+
+#tamago{
+	position : relative;
+	float: left;
+	width: 120px;
+	height: 140px;
+	border-style:solid;
+    border-width:2px;
+    border-color: white;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px ;
+    border-radius:20px ;
+    margin-left: 0px;
+    margin-right: 10px;
+    padding-top: 6px;
+
+
+}
+
+#credit {
+	font-size: 10px;
+
+	margin-left: 200px;
+	margin-right: 10px;
+	line-height: 1px;
+	padding-top: 0px;
+}
+
+
 
 /* Pour la page Affichage donnees*/
 
@@ -62,6 +154,7 @@ color:white;
 -moz-border-radius:10px;
 -webkit-border-radius:10px;
 border-radius:10px;
+margin-left: 500px;
 }
 
 
@@ -70,12 +163,12 @@ border-radius:10px;
 	margin-right: auto;
 }
 
-#joueur{
+#joueur {
 		text-align: center;
 }
 
 
-#intitule p{
+#intitule p {
 display: none;
 }
 
@@ -83,11 +176,9 @@ canvas{
 	display: none;
 }
 
-iframe{
-	display: none;
-}
 
 #boutons{
 	display: none;
+	margin : 5px;
 }
 

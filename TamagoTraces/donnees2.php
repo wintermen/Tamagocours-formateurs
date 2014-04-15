@@ -2,7 +2,7 @@
 
 $donneesrecues = $_POST['choix_donnees'];
 
-mysql_connect("localhost", "root", "root") or die(mysql_error());
+mysql_connect("localhost", "root", "") or die(mysql_error());
 mysql_select_db("inf42") or die(mysql_error());
 
 $result = mysql_query("SELECT DISTINCT name FROM table2")
@@ -36,21 +36,21 @@ $resourceexaminee=array();
 while($row3 = mysql_fetch_array($result3)){
 $stock2 = $row3['resourceType'];
 $resourceexaminee[]=$stock2;
-}
-
+}                      
+                                                 
+                          
 echo "<h3>Statistiques du Groupe</h3>
-		<p id='intit1'>Nombre d'actions entreprises</p>
-          <canvas id='myChart0'></canvas>
-          <p id='intit2'>Echec succès du nourrissage par ressource</p>
+		    <p id='intit0'>Nombre d'actions entreprises</p>
+         <canvas id='myChart0'></canvas>
+          <p id='intit1'>Echec succès du nourrissage par ressource</p>
           <canvas id='myChart1'></canvas>
-          <p id='intit3'>Niveaux franchis</p>
+          <p id='intit2'>Niveaux franchis</p>
           <canvas id='myChart2'></canvas>
-          <p id='intit4'>Actions entreprises lors d'échec nourrissage pour $resourceexaminee[0]</p>
-           <canvas id='myChart3'></canvas>
-          <p id='intit5'>Actions entreprises lors d'échec nourrissage pour $resourceexaminee[1]</p>
-           <canvas id='myChart4'></canvas>
+          <p id='intit3'>Actions entreprises lors d'échec nourrissage pour $resourceexaminee[0]</p>
+          <canvas id='myChart3'></canvas>
+          <p id='intit4'>Actions entreprises lors d'échec nourrissage pour $resourceexaminee[1]</p>
+          <canvas id='myChart4'></canvas>
           ";
-
 }
 
 for ($i=0; $i < $nombrejoueurs ; $i++) {
@@ -65,18 +65,21 @@ $resourceexaminee[]=$stock2;
 }
 
 echo utf8_encode("<h3>Statistiques de $noms[$i]</h3>");
-echo "<p id='intit1'>Nombre d'actions entreprises</p>
+echo "<p id='intit0'>Nombre d'actions entreprises</p>
       <canvas id='myChart0'></canvas>
-      <p id='intit2'>Echec succès du nourrissage par ressource</p>
-      <canvas id='myChart1'></canvas>
-          <p id='intit3'>Niveaux franchis</p>
+          <p id='intit1'>Echec succès du nourrissage par ressource</p>
+          <canvas id='myChart1'></canvas>
+          <p id='intit2'>Niveaux franchis</p>
           <canvas id='myChart2'></canvas>
-          <p id='intit4'>Actions entreprises lors d'échec nourrissage pour $resourceexaminee[0]</p>
-           <canvas id='myChart3'></canvas>
-          <p id='intit5'>Actions entreprises lors d'échec nourrissage pour $resourceexaminee[1]</p>
+          <p id='intit3'>Actions entreprises lors d'échec nourrissage pour $resourceexaminee[0]</p>
+          <canvas id='myChart3'></canvas>
+          <p id='intit4'>Actions entreprises lors d'échec nourrissage pour $resourceexaminee[1]</p>
           <canvas id='myChart4'></canvas>";
           
 }
+
+
+
 }
 
 

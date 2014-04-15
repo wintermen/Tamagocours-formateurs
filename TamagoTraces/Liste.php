@@ -17,20 +17,23 @@
        	</script>
       </head>
   <body>
-    <header>
+       <header>
       <div class="header_images">
 <img class="logo" id="logoEductice" src="images/logo_eductice.jpg">
 <img class="logo" id="logoENS" src="images/logo_ens.jpg">
 <img class="logo" id="logoIFE" src="images/logo_ife.jpg">
       </div>
     <div class="header_titre">
-      <h1>TAMAGOCOURS-FORMATEURS</h1>
+      <h1 class= "titre">TAMAGOCOURS-FORMATEURS</h1>
     </div>
-   </header>
-    <h1>Archives des exports pdf</h1>
+   </header></br>
+
+    <h1>Exports pdf</h1>
 
 <?php
-if ($handle = opendir('/pdf')) {
+echo"<a href='index.html'/><button>Accueil</button></a>";
+
+if ($handle = opendir('C:\Utilitaires\Admire\wamp\www\INF42\pdf')) {
        while (false !== ($entry = readdir($handle))) {
         echo "<p id='pdf/$entry'>$entry</p>";
     }

@@ -4,7 +4,7 @@ $donneesrecues = $_POST['choix_donnees'];
 
 $couleurs = array( 0 => '#D97041', 1 => '#FFC0CB', 2 => '#EA1B1B',3 => '#FF8C00',4 => '#800080',5 => '#010801',6 => '#DE9EEE9',7 => '#E01DD4',);
 
-mysql_connect("localhost", "root", "root") or die(mysql_error());
+mysql_connect("localhost", "root", "") or die(mysql_error());
 mysql_select_db("inf42") or die(mysql_error());
 
 $result = mysql_query("SELECT DISTINCT name FROM table2")
